@@ -27,3 +27,13 @@
 - 对加了"高斯噪声/椒盐噪声"的二维图像矩阵进行频域滤波(文件名：noise_lowpass_fft2.m与noise_compare.m)。
 - 另外，上面很多程序中用到了"**zxc.jpg**"图片，也放了进去方便直接测试程序(文件名：zxc.jpg);
 - 相关说明参考：[二维卷积与二维离散傅里叶变换](https://www.jianshu.com/nb/35397386)。
+
+
+# 时间：2019.04.20
+新增程序如下：
+- 一维信号小波多级分解与重构/恢复原始信号的手动实现(文件名：xb1d_basic.m与xb1d_recover.m)；
+- 一维信号相关matlab自带函数的使用(文件名：oned_process1.m与oned_process2.m)；
+- 小波应用1：利用小波多级分解辨识信号中的间断点(文件名：Identify_breakpoint.m)；
+- 小波应用2：利用小波和短时傅里叶变换做**时频分析**，研究**时变信号**中**频率随时间**的变化情况(文件名：tfrstft.m与time_freq_analy.m)；
+- 小波应用3：小波变换去噪(文件名：wden_qz.m与wdencmp_qz.m)；
+- 相关参考说明：[小波变换](https://www.jianshu.com/nb/35397386)。
