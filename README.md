@@ -36,7 +36,7 @@
 - 小波应用1：利用小波多级分解辨识信号中的间断点(文件名：Identify_breakpoint.m)；
 - 小波应用2：利用小波和短时傅里叶变换做**时频分析**，研究**时变信号**中**频率随时间**的变化情况(文件名：tfrstft.m与time_freq_analy.m)；
 - 小波应用3：小波变换去噪(文件名：wden_qz.m与wdencmp_qz.m)；
-- 小波应用4：实际地震数据的时频分析，并绘制等值线图、mesh2d、mesh3d图像(文件名：shiji.m；数据名：shuji.xlsx)；
+- 小波应用4：实际地震数据的时频分析，并绘制等值线图、mesh2d、mesh3d图像(文件名：shiji.m；数据名：shuju.xlsx)；
 - 相关参考说明：[小波变换](https://www.jianshu.com/nb/35397386)。     
 **注意：时频分析应用时，各个函数都要配上tfrstft.m函数(放在一起)，它里面有一些时频变换的基础功能。**
 
