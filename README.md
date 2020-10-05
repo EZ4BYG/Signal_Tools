@@ -1,13 +1,36 @@
-# Signaltools:
+# Signaltools
 
-Contents: Fourier-Transform, Wavelet-Transform, τp transform, HHT 
+Contents: Fourier-Transform, Wavelet-Transform, τp Transform, Hilbert—Huang Transform 
 
-# Fourier-Transform
-主要为"离散傅里叶变换(DFT)与卷积(conv)"相关matlab和python程序
+# Time: 2019.3.09
+- Programs about Discrete Fourier Transform(DFT), Inverse Transform(IDFT) and Convolution(Matlab+Python)
 
-说明1：DFT程序中读取外部txt数据文件，格式只有一个要求：**每行数据个数一致**。       
+**Tips**:
+- DFT needs to read external .txt file, and the .txt file has only one requirement: Consistent number of data per line
+- 2D Convolution has only one requirement: 2D data matrix size > Convolution kernel size(the sides have to be odd)
 
-说明2：二维卷积只有一个要求：二维数据矩阵尺寸 **>** 卷积核尺寸(边长最好为奇数)。
+# Time: 2019.3.10
+- Convolution(by myself) —— **convolution.m**
+- Example1: a 1D discrete signal is processed by DFT —— **cx1.m** and **cx1_sx.m**
+- Example2: another 1D discrete signal is processed by DFT and IDFT —— **cx2.m** and **cx2_sx.m**
+- Example3: doing DFT for a time-domain signal, then it's converted to frequency-domain signal. Then the frequency-domain signal is filtered —— **cx3.m** and **cx3_sx.m**
+- Cyclic convolution for a signal —— **cyclic_convolution.m**
+
+# Time：2019.03.23
+- 2D Convolution(by myself), then tested with a simple 2D matrix —— **juanji1_2d.m** and **juanji2_2d.m**
+- Image processing by 2D convolution, using various convolution kernels to realize different image processing effects —— **juanji3_2d.m**
+- Image filtering by 2D convolution, **Median-filtering** and **Mean-filtering** for *Gaussian noise* and *salt noise* —— **noise_mean.m** and **noise_midval.m**
+- 2D Deconvolution(by myself), then tested with a simple 2D matrix processed by 2D convolution —— **fjuanji1_2d.m** and **kz1.m** 
+- 2D Discrete Fourier transform and Inverse Fourier transform(by myself) —— **mydft2.m** and **myidft2.m**
+
+---
+
+# 时间：2019.3.09
+- 主要为"离散傅里叶变换(DFT)与卷积(conv)"相关matlab和python程序
+
+**说明**：
+- DFT程序中读取外部txt数据文件，格式只有一个要求：**每行数据个数一致**。       
+- 二维卷积只有一个要求：二维数据矩阵尺寸 **>** 卷积核尺寸(边长最好为奇数)。
 
 # 时间：2019.3.10
 新增程序如下：
