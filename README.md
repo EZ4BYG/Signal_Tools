@@ -15,6 +15,9 @@ Contents: Fourier-Transform, Wavelet-Transform, τp Transform, Hilbert—Huang T
 - Example2: another 1D discrete signal is processed by DFT and IDFT —— **cx2.m** and **cx2_sx.m**
 - Example3: doing DFT for a time-domain signal, then it's converted to frequency-domain signal. Then the frequency-domain signal is filtered —— **cx3.m** and **cx3_sx.m**
 - Cyclic convolution for a signal —— **cyclic_convolution.m**
+- Frequency-Amplitude diagram centralization after 2D DFT —— **center_fft2.m**
+- Butterworth low-pass filtering —— **origin_lowpass_fft2.m**
+- 
 
 # Time：2019.03.23
 - 2D Convolution(by myself), then tested with a simple 2D matrix —— **juanji1_2d.m** and **juanji2_2d.m**
@@ -22,6 +25,40 @@ Contents: Fourier-Transform, Wavelet-Transform, τp Transform, Hilbert—Huang T
 - Image filtering by 2D convolution, **Median-filtering** and **Mean-filtering** for *Gaussian noise* and *salt noise* —— **noise_mean.m** and **noise_midval.m**
 - 2D Deconvolution(by myself), then tested with a simple 2D matrix processed by 2D convolution —— **fjuanji1_2d.m** and **kz1.m** 
 - 2D Discrete Fourier transform and Inverse Fourier transform(by myself) —— **mydft2.m** and **myidft2.m**
+- Filtering in frequency domain for the image with noise —— **noise_lowpass_fft2.m** and **noise_compare.m**
+
+**Tips**:
+- Mang programs use the picture named **zxc.jpg**
+- You can see more detailed interpretation from my blog: https://www.jianshu.com/nb/35397386
+
+# Time：2019.04.20
+- 1D signal multistage decomposition, reconstruction and recover by wavelet —— **xb1d_basic.m** and **xb1d_recover.m**
+- Using Matlab own wavelet toolbox functions —— **oned_process1.m** and **oned_process2.m**
+- Example1: identify the discontinuities in the signal by multistage wavelet decomposition —— **Identify_breakpoint.m**
+- Example2: **time-frequency analysis** by wavelet and short-time Fourier transform, studying the variation of frequency with time in **time-varying signal** —— **tfrstft.m** and **time_freq_analy.m**
+- Example3: denoising by wavelet —— **wden_qz.m** and **wdencmp_qz.m**
+- Example4: time-frequency analysis of actual seismic data, and drawing contour map, mesh2D and mesh3D pictures —— **shiji.m**, Data: **shuju.xlsx**
+- You can see more detailed interpretation from my blog: https://www.jianshu.com/nb/35397386
+
+**Tips**:
+- When you want to use the time-frequency analysis function, you have to use the **tfrstft.m** function. So remember to include this file!
+
+# Time：2019.04.25
+- Geophysical-specific τp transform —— **τp.m**
+- You can see more detailed interpretation from my blog: https://www.jianshu.com/p/4439a1cb5c35
+
+# Time：2019.04.28
+- 1D Discrete Hilbert Transform(DHT) —— **Hilbert.m**
+- DHT is applied to the real signal to obtain its '3I' property: Instantaneous-frequency, Instantaneous-phase and Instantaneous-amplitude —— **HT3S.m**
+- You can see more detailed interpretation from my blog: https://www.jianshu.com/p/b591d95ae80b
+
+# Time：2019.05.16
+- Time-frequency analysis by Hilbert—Huang Transform(HHT) —— **HHT1** folder
+- Time-frequency analysis by HHT with advanced ceemdan decomposition —— **HHT2** folder —— **Recommand**!!
+- You can see more detailed interpretation from my blog: https://www.jianshu.com/p/3363abb64f32
+
+**Tips**:
+- HHT is currently the best method for time-frequency analysis. The new improvements simply change its empirical mode decomposition process, but the idea remains the same! So when you want to conduct time-frequency analysis, I recommend you use HHT instead of wavelet!
 
 ---
 
